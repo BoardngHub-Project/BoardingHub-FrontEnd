@@ -1,5 +1,5 @@
 body{
-    background-color: aquamarine;
+    background-color: rgb(233, 239, 237);
 }
 
 
@@ -14,8 +14,26 @@ body{
 
 .justify-content-md-center{
   position: absolute;
-  top: 40%;
- 
+
+  background-color: #ffffff;
+  align-content: center;
+  background-size: auto;
+  top: 5%;
+  bottom: 5%;
+  left:5%;
+  right: 5%;
+  
 }
 
+.large-text{
+  padding-bottom: 15px;
+  font-size: 25px;
+}
 
+.col-12{
+  align-items: center;
+}
+
+.btn{
+  align-items: center;
+}

@@ -1,12 +1,13 @@
 import React from "react";
 import signup from "./Assets/signup.avif";
+import './CreateUser.css';
 
 function ServiceProviderAccount() {
   return (
     <div class="container">
       <div class="row justify-content-md-center">
         <div class="col col-lg-5">
-          <p class="text-start">
+          <p class="text-start large-text">
             <b>Create Account</b>
           </p>
           <div class="row">
@@ -118,7 +119,7 @@ function ServiceProviderAccount() {
             />
           </div>
 
-          <div class="col-12">
+          <div class="col-12 d-flex justify-content-center">
             <button class="btn btn-primary btn-block" type="submit">
               Sign Up
             </button>

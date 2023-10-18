@@ -1,4 +1,4 @@
-import CreateUser from './Pages/CreateUser';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ServiceProviderAccount from './Pages/ServiceProviderAccount';
 
