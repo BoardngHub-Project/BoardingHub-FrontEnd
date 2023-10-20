@@ -1,0 +1,73 @@
+/* Style for the button container */
+/* .button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; */
+  /* height: 100vh; /* Center vertically on the page */
+/*} */
+
+/* Style for the buttons */
+/* .main-button {
+  width: 200px;
+  height: 200px;
+  font-size: 24px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  margin: 10px;
+} */
+
+.ButtonItem {
+  width: 300px;
+ 
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 100px;
+    margin-bottom: 0px;
+    
+    
+    height: 400px;
+    background: teal;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+}
+.ButtonItem:hover {
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+
+.ButtonItem div {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  width: 100%;
+  height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/* Button background images */
+/* .breakfast-button {
+  background: url('D:\University\3rd year-1st sem\CS304\BoardingHub\BoardingHub-Frontend\BoardingHub-FrontEnd\images\21952545_10155674190633698_1016293131_o-1-1.webp');
+}
+
+.lunch-button {
+  background: url('D:\University\3rd year-1st sem\CS304\BoardingHub\BoardingHub-Frontend\BoardingHub-FrontEnd\images\9248cb0d-8d44-4070-a68f-5df9dcffe955-scaled.jpeg');
+}
+
+.dinner-button {
+  background: url('D:\University\3rd year-1st sem\CS304\BoardingHub\BoardingHub-Frontend\BoardingHub-FrontEnd\images\SU_190204_Sri_Lanka_food_lead_resources1_16a4a1581c5_large.jpg');
+} */
+
+/* Add some hover effect */
+/* .main-button:hover {
+  opacity: 0.8;
+} */
