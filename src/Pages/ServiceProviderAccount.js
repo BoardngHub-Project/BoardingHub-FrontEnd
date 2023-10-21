@@ -1,5 +1,5 @@
 import React from "react";
-import signup from "./Assets/signup.avif";
+import signup from '../Assets/signup.avif';
 
 function ServiceProviderAccount() {
   return (
