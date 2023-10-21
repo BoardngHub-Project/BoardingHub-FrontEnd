@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -6,13 +7,18 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // import ServiceProviderAccount from './Pages/ServiceProviderAccount';
 import MealProvider1 from './Pages/MealProvider1';
 import Footer from './Component/Footer';
-import 
+
+
+
+//import NavBar from './Component/NavBar';
+
 
 
 
 function App() {
   return (
     <div>
+
     <Router>
       <Switch>
        <Route path="/" element={<Home />} />
@@ -21,6 +27,9 @@ function App() {
    { <Footer/>}
     </Router>
       
+
+     // <NavBar/>
+
     </div>
   );
 }
