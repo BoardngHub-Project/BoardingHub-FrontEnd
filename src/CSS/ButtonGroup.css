@@ -29,12 +29,12 @@
  
     margin-right: auto;
     margin-left: auto;
-    margin-top: 100px;
+    margin-top: 220px;
     margin-bottom: 0px;
     
     
-    height: 400px;
-    background: teal;
+    height: 250px;
+    background: lightskyblue;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
 }
 .ButtonItem:hover {
@@ -51,6 +51,15 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.ButtonList {
+  width: 70vw;
+  height: auto;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
 }
 
 
