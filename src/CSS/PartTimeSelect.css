@@ -12,6 +12,8 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 196%;
     color:black;
+    top: 100px;
+    position:relative;
     
   
 }
@@ -19,7 +21,8 @@
 
 .flex-container {
     display: flex;
-    top: 30px;
+    top: 100px;
+    position: relative;
     
 }
   
@@ -30,6 +33,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    top: 100px;
     
   }
   

@@ -19,7 +19,7 @@ function Welcome() {
            condimentum blandit. Fermentum et nisi vulputate eu viverra sed interdum.</p>
       </div>
       <br/><br/><br/>
-      <Footer/>   
+        <Footer/>
     </div>
   )
 }
