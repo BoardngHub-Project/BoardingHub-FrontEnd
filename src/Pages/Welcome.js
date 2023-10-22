@@ -10,7 +10,7 @@ function Welcome() {
       <br/><br/><br/><br/><br/><br/>
       <NavBar/>
       <div>
-        <img src={require('../Assets/Welcome1.jpg')} height={460} width={1920} alt='WelcomeImage'/>
+        <img src={require('../Assets/Welcome1.jpg')} height={460} width='100%' alt='WelcomeImage'/>
       </div>
       <br/><br/>
       <div className="HomeTextBox">
