@@ -1,5 +1,5 @@
 import React from "react"
-import './Login.css';
+import '../CSS/Login.css';
 
 export const Login = () => {
     
@@ -22,7 +22,7 @@ export const Login = () => {
                         <div>
                             <p className="forgotPassword"><b>Forgot Password?</b></p>
                         </div>
-                        <button className="loginButton" type="Submit">Log In</button>
+                        <button className="loginButton" type="Submit"><b>Log In</b></button>
                     </form>
                 </div>
 

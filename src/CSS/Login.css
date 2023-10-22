@@ -98,7 +98,7 @@ Input {
 }
 
 .loginButton{
-    background-color: #000000;
+    background-color: #1bb410;
     text-align: center;
     color: white;
     border-radius: 15px;
@@ -107,6 +107,7 @@ Input {
     height: 35px;
     position: relative;
     left: 160px;
+    padding: 3px;
 }
 
 .hRule{
