@@ -4,7 +4,7 @@ import NavBar from '../Component/NavBar';
 import '../CSS/Home.css';
 
 
-function Home() {
+function Welcome() {
   return (
     <div>
       <br/><br/><br/><br/><br/><br/>
@@ -24,5 +24,5 @@ function Home() {
   )
 }
 
-export default Home
+export default Welcome
 
