@@ -25,6 +25,7 @@ class NavBar extends Component {
               </li>
             );
           })}
+          <button>Login</button>
         </ul>
       </nav>
     );
