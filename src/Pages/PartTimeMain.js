@@ -25,6 +25,3 @@ function PartTimeMain() {
 
 
 export default PartTimeMain;
-
-
-
