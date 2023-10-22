@@ -13,7 +13,6 @@ import Home from './Pages/Home';
 function App() {
   return (
     <div>
-
     <Router>
       <Switch>
        <Route path="/" element={<Home/>} />
@@ -21,9 +20,8 @@ function App() {
       </Switch>
    { <Footer/>}
     </Router>
-      
+      <NavBar/>
 
-     // <NavBar/>
 
     </div>
   );
