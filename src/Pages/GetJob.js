@@ -3,12 +3,15 @@
 import React from "react";
 import '../CSS/GetJob.css';
 import getjobImage from '../Assets/PartTimeJob/GetJob.png'
+import Footer from "../Component/Footer";
+import NavBar from "../Component/NavBar";
 
 
 function GetJob() {
     return (
         
         <div className="flex-container">
+          <NavBar/>
 
         <div className="left-side">
         <div className="title">
@@ -20,6 +23,7 @@ function GetJob() {
         <div className="right-side">
           <img src={getjobImage} height={200} />
         </div>
+        <Footer/>
       </div>
     );
 
