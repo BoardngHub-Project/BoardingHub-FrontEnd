@@ -9,7 +9,7 @@ import NavBar from "../Component/NavBar";
 
 function GetJob() {
     return (
-        
+      <div className="body">
         <div className="flex-container">
           <NavBar/>
 
@@ -23,7 +23,10 @@ function GetJob() {
         <div className="right-side">
           <img src={getjobImage} height={200} />
         </div>
-        <Footer/>
+
+       
+      </div>
+      <div> <Footer/></div>
       </div>
     );
 
@@ -31,6 +34,3 @@ function GetJob() {
 
 
 export default GetJob;
-
-
-

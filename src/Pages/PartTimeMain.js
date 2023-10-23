@@ -11,6 +11,10 @@ function PartTimeMain() {
           <NavBar/>
           <div className="flex-container">
             <div className="left-side">
+            <div className="title">
+                <h1>   Give and Get the Perfect Job</h1>
+           </div>
+
               <button>Get Job</button>
               <button>Give Job</button>
             </div>

@@ -21,8 +21,12 @@
 
 .flex-container {
     display: flex;
-    top: 100px;
-    position: relative;
+    top: 30px;
+    background-image: url("../Assets/PartTimeJob/b3.jpg");
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center center;
+
     
 }
   
@@ -62,4 +66,3 @@
     margin: 10%;
   }
   
- 
