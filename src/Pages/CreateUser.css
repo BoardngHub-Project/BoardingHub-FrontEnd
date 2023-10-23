@@ -1,8 +1,12 @@
 body{
-    background-color: rgb(233, 239, 237);
+    background-color: rgb(255, 255, 255);
 }
 
-
+.container{
+  display: flex;
+  top: 100PX;
+  
+}
 
 .container.container.text-center{
     
@@ -37,3 +41,4 @@ body{
 .btn{
   align-items: center;
 }
+

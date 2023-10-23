@@ -4,7 +4,7 @@ import NavBar from '../Component/NavBar';
 import '../CSS/Home.css';
 
 
-function Home() {
+function Welcome() {
   return (
     <div>
       <br/><br/><br/><br/><br/><br/>
@@ -19,10 +19,10 @@ function Home() {
            condimentum blandit. Fermentum et nisi vulputate eu viverra sed interdum.</p>
       </div>
       <br/><br/><br/>
-      <Footer/>   
+        <Footer/>
     </div>
   )
 }
 
-export default Home
+export default Welcome
 
