@@ -1,0 +1,35 @@
+.SearchBar{  
+position: absolute;
+z-index: 10000;
+display: flex;
+}
+
+.searchInput{
+    position: absolute;
+    width: 80%;
+}
+
+.SearchBtn{
+    height: 50px;
+}
+
+#dropdown-basic-button{
+    height: 50px;
+    background-color: aliceblue;
+    color: black;
+    
+}
+/* .RangeBtn{
+    color: green;
+    
+}
+
+.dropdown{
+    position: absolute;
+    top: 100px;
+
+}
+
+.SearchBtn{
+    background-color: #04AA6D;
+} */
