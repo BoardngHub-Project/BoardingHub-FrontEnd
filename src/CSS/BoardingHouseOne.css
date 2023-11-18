@@ -1,0 +1,25 @@
+.boardingHouseOneImage{
+    display: flex;
+    position: relative;
+    top: 150px;
+
+}
+
+.searchBar{
+    align-self:center;
+    position: relative;
+    left: 150px;
+}
+/* .btn-group {
+
+    position: absolute;
+    top: 350px;
+    border: 1px;
+    color: green;
+} */
+
+.MapComponent{
+
+    position: relative;
+    top: 200px;
+}
