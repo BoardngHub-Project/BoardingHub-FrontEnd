@@ -1,12 +1,39 @@
-import React from "react";
+import React, { useState } from "react";
 
 import signup from '../Assets/signup.avif';
+import axios from "axios";
 
 
 import './CreateUser.css';
 
 
 function ServiceProviderAccount() {
+  const [firstname, setFirstname] = useState("");
+  const [lastname, setLastname] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [confirmpassword, setConfirmpassword] = useState("");
+  const [boardingProvider, setBoardingProvider] = useState(false);
+  const [mealProvider, setMealProvider] = useState(false);
+  const [transportationProvider, setTransportationProvider] = useState(false);
+  const [jobProvider, setJobProvider] = useState(false);
+
+  async function save(event) {
+    event.preventDefault();
+    try {
+      await axios.post("http://localhost:8080//api/service-provider", {
+        firstName: firstname,
+        lastName:lastname,
+        email: email,
+        password: password,
+        confirmPassword: confirmpassword,
+        
+      });
+      alert("Employee Registation Successfully");
+    } catch (err) {
+      alert(err);
+    }
+  }
   return (
     <div class="container">
       <div class="row justify-content-md-center">
@@ -24,6 +51,11 @@ function ServiceProviderAccount() {
                 class="form-control"
                 placeholder="First name"
                 aria-label="First name"
+                id="firstname"
+                value={firstname}
+                onChange={(event) => {
+                  setFirstname(event.target.value);
+                }}
               />
             </div>
             <div class="col">
@@ -35,6 +67,11 @@ function ServiceProviderAccount() {
                 class="form-control"
                 placeholder="Last name"
                 aria-label="Last name"
+                id="lastname"
+                value={lastname}
+                onChange={(event) => {
+                  setLastname(event.target.value);
+                }}
               />
             </div>
           </div>
@@ -47,6 +84,11 @@ function ServiceProviderAccount() {
               class="form-control"
               id="exampleFormControlInput1"
               placeholder="name@example.com"
+              id="email"
+              value={email}
+              onChange={(event) => {
+                setEmail(event.target.value);
+              }}
             />
           </div>
           {/* check box */}
@@ -58,7 +100,11 @@ function ServiceProviderAccount() {
                   class="form-check-input"
                   type="checkbox"
                   value=""
-                  id="checkbox1"
+                  id="boardingProvider"
+                  value = {boardingProvider}
+                  onChange = {(event) => {
+                    setBoardingProvider(event.target.value);
+                  }}
                 />
                 <label class="form-check-label" for="boardingprovider">
                   Boarding Place Provider
@@ -70,6 +116,10 @@ function ServiceProviderAccount() {
                   type="checkbox"
                   value=""
                   id="mealprovider"
+                  value = {mealProvider}
+                  onChange = {(event) => {
+                    setMealProvider(event.target.value);
+                  }}
                 />
                 <label class="form-check-label" for="mealprovider">
                   Meal Provider
@@ -82,7 +132,11 @@ function ServiceProviderAccount() {
                   class="form-check-input"
                   type="checkbox"
                   value=""
-                  id="checkbox3"
+                  id="transportationProvider"
+                  value = {transportationProvider}
+                  onChange = {(event) => {
+                    setTransportationProvider(event.target.value);
+                  }}
                 />
                 <label class="form-check-label" for="transportationprovider">
                   Transportation Provider
@@ -93,7 +147,11 @@ function ServiceProviderAccount() {
                   class="form-check-input"
                   type="checkbox"
                   value=""
-                  id="checkbox4"
+                  id="jobProvider"
+                  value = {jobProvider}
+                  onChange = {(event) => {
+                    setJobProvider(event.target.value);
+                  }}
                 />
                 <label class="form-check-label" for="jobprovider">
                   Part-Time-Job Provider
@@ -110,6 +168,11 @@ function ServiceProviderAccount() {
               type="password"
               class="form-control"
               placeholder="Password"
+              id="password"
+              value={password}
+              onChange={(event) => {
+                setPassword(event.target.value);
+              }}
             />
           </div>
           <div class="mb-3">
@@ -120,11 +183,16 @@ function ServiceProviderAccount() {
               type="password"
               class="form-control"
               placeholder="Confirm Password"
+              id="confirmpassword"
+              value={confirmpassword}
+              onChange={(event) => {
+                setConfirmpassword(event.target.value);
+              }}
             />
           </div>
 
           <div class="col-12 d-flex justify-content-center">
-            <button class="btn btn-primary btn-block" type="submit">
+            <button class="btn btn-primary btn-block" type="submit" onClick={save}>
               Sign Up
             </button>
           </div>

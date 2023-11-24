@@ -11,7 +11,6 @@ function TranspotationLanding() {
         <img src={rent} alt="Left Button" class="image" />
       </button>
 
-      {/* Your main content goes here */}
 
       <button className="right-button">
         <img src={hire} alt="Right Button" class="image" />
