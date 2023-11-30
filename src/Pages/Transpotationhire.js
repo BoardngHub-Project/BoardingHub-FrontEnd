@@ -4,7 +4,7 @@ import "../CSS/hire.css";
 import passenger from "../Assets/Transpottion/passenger.avif";
 import NavBar from "../Component/NavBar";
 
-function Transpottionahire() {
+function Transpotationhire() {
   const [formData, setFormData] = useState({
     currentLocation: "",
     van: false,
@@ -138,4 +138,4 @@ function Transpottionahire() {
   );
 }
 
-export default Transpottionahire;
+export default Transpotationhire;
