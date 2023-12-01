@@ -23,6 +23,7 @@ function GetJob() {
         <div className="right-side">
           <img src={getjobImage} height={200} />
         </div>
+
        
       </div>
       <div> <Footer/></div>
