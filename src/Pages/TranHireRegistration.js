@@ -87,3 +87,4 @@ function TranHireRegistration() {
 }
 
 export default TranHireRegistration;
+
