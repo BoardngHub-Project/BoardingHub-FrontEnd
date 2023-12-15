@@ -1,0 +1,32 @@
+.ContactOwnerComponent{
+    padding-top:30px;
+    padding-left: 50px;
+    background-color: white;
+
+}
+
+#whatsappbtn{
+    background-color: rgb(21, 157, 21);
+    color: white;
+}
+
+#senderEmail{
+    position: absolute;
+    top: 200px;
+    height: 20px;
+    width: 1000px;
+}
+
+#receiverEmail{
+    position: absolute;
+    top: 250px;
+    height: 20px;
+    width: 1000px;
+}
+
+#emailBody{
+    position: absolute;
+    top: 300px;
+    height: 100px;
+    width: 1000px;
+}
