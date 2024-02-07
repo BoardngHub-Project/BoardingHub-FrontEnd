@@ -12,11 +12,27 @@ export const Login = () => {
       await axios.post("http://localhost:8080/api/login", {
         email: email,
         password: password,
-      });
-      alert("Employee login Successfully");
+      }).then((res) =>
+      {
+        console.log(res.data);
+        if(res.data === "Account not found")
+        {
+          alert("Account not found");
+        }
+        else if(res.data === "Logged in Successfully!...")
+        {
+          alert("Logged in Successfully!...");
+        }
+        else{
+          alert("Incorrect email or password");
+        }
+      }, 
+      );
+
     } catch (err) {
       alert(err);
     }
+
   }
   return (
     <div className="container">
@@ -36,9 +52,9 @@ export const Login = () => {
                 id="email"
                 name="email"
                 value={email}
-                onChange={(event) => {
-                  setEmail(event.target.value);
-                }}
+                onChange={(event) => 
+                  setEmail(event.target.value)
+                }
               />
             </div>
             <br></br>
