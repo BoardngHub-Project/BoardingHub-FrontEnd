@@ -1,32 +1,44 @@
 .ContactOwnerComponent{
+    position: relative;
+    top: 150px;
+    left: 50px;
     padding-top:30px;
     padding-left: 50px;
     background-color: white;
 
 }
 
-#whatsappbtn{
-    background-color: rgb(21, 157, 21);
-    color: white;
-}
-
 #senderEmail{
     position: absolute;
-    top: 200px;
-    height: 20px;
+    top: 100px;
+    height: 40px;
     width: 1000px;
 }
 
 #receiverEmail{
     position: absolute;
-    top: 250px;
-    height: 20px;
+    top: 150px;
+    height: 40px;
     width: 1000px;
 }
 
 #emailBody{
     position: absolute;
-    top: 300px;
-    height: 100px;
+    top: 200px;
+    height: 200px;
     width: 1000px;
+}
+
+.submitBtn{
+    background-color: rgb(21, 157, 21);
+    text-align: center;
+    color: white;
+    border-radius: 15px;
+    width: 150px;
+    border: 0;
+    height: 45px;
+    position: relative;
+    left: 850px;
+    top: 350px;
+    padding: 3px;
 }

@@ -1,10 +1,7 @@
-
-/* .container{
-    width: 500px;
-    height: 300px;
-    border: #000000;
-    background-color: #000000;
-} */
+.container{
+    position: relative;
+    top: 70px;
+}
 
 .loginHeader {
     position: absolute;
@@ -53,7 +50,7 @@
 
 
 .SignUpButton {
-    background-color: white;
+    background-color: black;
     padding: 7px;
     border-radius: 15px;
     width: 150px;
@@ -86,9 +83,20 @@ label{
 }
 
 
-Input {
+.emailIn {
     background-color: #dbdada;
-    border-radius: 10px;
+    border-radius: 5px;
+    width: 500px;
+    position: relative;
+    border: 0;
+    height: 30px;
+    
+
+}
+
+.passwordIn {
+    background-color: #dbdada;
+    border-radius: 5px;
     width: 500px;
     position: relative;
     border: 0;
@@ -104,14 +112,14 @@ Input {
     border-radius: 15px;
     width: 150px;
     border: 0;
-    height: 35px;
+    height: 45px;
     position: relative;
-    left: 160px;
+    left: 350px;
     padding: 3px;
 }
 
 .hRule{
-    width: 200px;
+    width: 300px;
     left: -60px;
     top: -140px;
     position: relative;

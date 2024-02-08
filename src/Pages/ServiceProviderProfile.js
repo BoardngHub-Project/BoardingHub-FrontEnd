@@ -1,8 +1,7 @@
-import { Button } from 'bootstrap';
 import Footer from '../Component/Footer';
 import NavBar from '../Component/NavBar';
 import '../CSS/ServiceProviderProfile.css';
-import React, { useState } from 'react';
+import React from 'react';
 
 function ServiceProviderProfile() {
 

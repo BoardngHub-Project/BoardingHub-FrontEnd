@@ -1,0 +1,13 @@
+.AboutUsTextBox{
+    position: relative;
+    top: 0px;
+    left: 200px;
+    color: black;
+    width: 1000px;
+    height: 1000px;
+
+}
+
+.AboutUsText{
+    font-size: x-large;
+}

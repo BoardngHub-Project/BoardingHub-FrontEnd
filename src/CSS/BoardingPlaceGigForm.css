@@ -61,6 +61,26 @@
     font-size: 20px;
 }
 
+#Longitudes{
+    position: absolute;
+    top: 270px;
+    right: 30px;
+    width: 40%;
+    height: 35px;
+    background-color: white;
+    font-size: 20px;
+}
+
+#Latitudes{
+    position: absolute;
+    top: 210px;
+    right: 30px;
+    width: 40%;
+    height: 35px;
+    background-color: white;
+    font-size: 20px;
+}
+
 #Accomadation_Type{
     position: absolute;
     top: 210px;
@@ -93,13 +113,14 @@
     position: absolute;
     bottom: 30px;
     color: white;
-    right: 50px;
+    left: 1100px;
     border-radius: 15px;
+    top: 670px;
 }
 
 #PricePerRoom{
     position: absolute;
-    top: 210px;
+    top: 150px;
     right: 30px;
     width: 40%;
     height: 35px;
@@ -113,3 +134,4 @@
     left: 30px;
     background-color: white;
 }
+
