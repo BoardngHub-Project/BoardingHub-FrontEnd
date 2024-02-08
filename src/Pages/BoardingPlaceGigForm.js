@@ -1,6 +1,6 @@
 
 import Footer from '../Component/Footer';
-import NavBar from '../Component/NavBar';
+import NavigationBarLoggedIn from '../Component/NavigationBarLoggedIn';
 import '../CSS/BoardingPlaceGigForm.css';
 import React, { useState } from 'react';
 
@@ -14,7 +14,7 @@ function BoardingPlaceGigForm() {
 
     return (
         <div>
-            <NavBar />
+            <NavigationBarLoggedIn />
             <div className="boardingPlaceGigFormImage">
                 <img src={require('../Pages/Assets/boardingHouse1.jpg')}
                 height={500}
@@ -34,6 +34,8 @@ function BoardingPlaceGigForm() {
                     {/* to get various decimal number inputs we need to use step="any" inside input tag */}
                     <input id="Availability" placeholder="  Availability"/>             
                     <input type="text" id="Description" placeholder="  Description"/>
+                    <input type="number" id="Longitudes" placeholder="  Longitudes" />
+                    <input type="number" id="Latitudes" placeholder="  Latitudes" />
 
                     <div className='mediaInput'>
                         <input type="file" onChange={handleFileChange} accept="image/*, video/*" />

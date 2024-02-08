@@ -1,12 +1,15 @@
 import React, { useState } from "react";
-//import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import "../CSS/Login.css";
 import axios from "axios";
+
+
+
 
 export const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
- // const navigate = useNavigate();
+  let nav = useNavigate()
 
   async function submit(event) {
     event.preventDefault();
@@ -24,7 +27,7 @@ export const Login = () => {
         else if(res.data === "Logged in Successfully!...")
         {
           alert("Logged in Successfully!...");
-          //navigate('/src/Pages/Home.js');
+          nav('/Dashboard');
         }
         else{
           alert("Incorrect email or password");
@@ -97,6 +100,7 @@ export const Login = () => {
           </button>
         </div>
       </div>
+      
     </div>
   );
 };
