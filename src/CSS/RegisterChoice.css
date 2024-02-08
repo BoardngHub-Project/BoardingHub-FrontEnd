@@ -1,0 +1,70 @@
+.title{
+    position: relative;
+    text-align: center;
+    align-items: center;
+    top: 100px;
+}
+
+#user{
+    position: relative;
+    top: 30px;
+    left: 50px;
+    width: 400px;
+    height: 300px;
+    font-size:x-large;
+    background-color: #FCFEA5;
+    border-radius: 30px;
+    display: flex;
+    text-align: center;
+    background-image: url('../Assets/user1.png');
+    background-size: cover; /* Adjust to fit the button */
+    background-position: center;
+}
+
+#serviceProvider{
+    position: relative;
+    display: flex;
+    top: 30px;
+    left: 50px;
+    width: 400px;
+    height: 300px;
+    background-color: #C3FFDF;
+    font-size:x-large;
+    border-radius: 30px;
+    background-image: url('../Assets/serviceProvider.png');
+    background-size: cover; /* Adjust to fit the button */
+    background-position:center;
+}
+
+#userDiv{
+    position: absolute;
+    display: flex;
+    top: 200px;
+    left: 150px;
+    width: 500px;
+    height: 400px;
+    background-color: #FCFEA5;
+    border-radius: 30px;
+    
+}
+
+#serviceProviderDiv{
+    position: absolute;
+    display: flex;
+    top: 200px;
+    left:850px;
+    width: 500px;
+    height: 400px;
+    background-color: #C3FFDF;
+    border-radius: 30px;
+    
+}
+
+.buttonName{
+    text-align: center;
+    position: absolute;
+    top: 350px;
+    height: 50px;
+    width: 500px;
+    font-size:x-large;
+}

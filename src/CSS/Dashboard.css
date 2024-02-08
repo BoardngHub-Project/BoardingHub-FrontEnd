@@ -1,0 +1,42 @@
+.title{
+    position: relative;
+    text-align: center;
+    top: 150px;
+    text-shadow: 100px;
+}
+
+.DashboardSelections{
+    position: relative;
+    top: 250px;
+}
+
+#profile{
+    position: relative;
+    left: 200px;
+    width: 300px;
+    height: 350px;
+    font-size:x-large;
+    background-color: #F9FBA5;
+    border-radius: 30px;
+}
+
+#addService{
+    position: relative;
+    left: 350px;
+    width: 300px;
+    height: 350px;
+    background-color: #C3FFDF;
+    font-size:x-large;
+    border-radius: 30px;
+}
+
+#editService{
+    position: relative;
+    left: 500px;
+    width: 300px;
+    height: 350px;
+    font-size:x-large;
+    background-color: #FAC3FF;
+    border-radius: 30px;
+    
+}
