@@ -18,6 +18,7 @@
     font-size:x-large;
     background-color: #F9FBA5;
     border-radius: 30px;
+    color: #000;
 }
 
 #addService{
@@ -28,6 +29,7 @@
     background-color: #C3FFDF;
     font-size:x-large;
     border-radius: 30px;
+    color: #000;
 }
 
 #editService{
@@ -38,5 +40,5 @@
     font-size:x-large;
     background-color: #FAC3FF;
     border-radius: 30px;
-    
+    color: #000;
 }

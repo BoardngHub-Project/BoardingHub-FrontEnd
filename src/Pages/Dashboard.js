@@ -1,35 +1,36 @@
-// import React from 'react';
-// import Footer from '../Component/Footer';
-// import NavBar from '../Component/NavBar';
-// import '../CSS/Dashboard.css';
-// import { useHistory } from 'react-router-dom';
+import React from 'react';
+import Footer from '../Component/Footer';
+import '../CSS/Dashboard.css';
+import NavigationBarLoggedIn from '../Component/NavigationBarLoggedIn';
+import { useNavigate } from 'react-router-dom';
 
-// function Dashboard() {
-//     const history = useHistory();
+function Dashboard() {
+    //let history = useHistory();
+    const navigate = useNavigate();
 
-//     const handleClick = (route) => {
-//         // Navigate to the specified route
-//         history.push(route);
-//       };
+    const handleClick = (path) => {
+        // Navigate to the dynamically provided path
+        navigate(path);
+    };
 
-//     return (
-//         <div>
-//             <NavBar/>
-//             <div className='title'>
-//                 <h1><b>Welcome Back...!</b></h1>
-//             </div>
-//             <div className='DashboardSelections'>
-//                 <button id='profile' onClick={() => handleClick('/src/Pages/ServiceProviderProfile.js')}><b>Profile</b></button>
-//                 <button id='addService' onClick={() => handleClick('/src/Pages/BoardingPlaceGigForm.js')}><b>Add Service</b></button>
-//                 <button id='editService' onClick={() => handleClick('/src/Pages/EditProfile.js')}><b>Edit Service</b></button>
+    return (
+        <div>
+            <NavigationBarLoggedIn/>
+            <div className='title'>
+                <h1><b>Welcome Back...!</b></h1>
+            </div>
+            <div className='DashboardSelections'>
+                <button id='profile' onClick={() => handleClick('/ServiceProviderProfile')}><b>Profile</b></button>
+                <button id='addService' onClick={() => handleClick('/BoardingPlaceGigForm')}><b>Add Service</b></button>
+                <button id='editService' onClick={() => handleClick('/EditProfile')}><b>Edit Service</b></button>
             
-//             </div>
+            </div>
         
-//             <Footer/>
-//         </div>
-//     )
-//   }
+            <Footer/>
+        </div>
+    )
+  }
   
-//   export default Dashboard
+  export default Dashboard
 
   
