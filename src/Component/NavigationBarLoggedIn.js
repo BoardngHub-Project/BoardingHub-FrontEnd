@@ -16,7 +16,10 @@ class NavigationBarLoggedIn extends Component {
                         </div>
 
                         <div id="nav-options">
-                            
+                            <span>
+                                {/* <button className="nav-links"> Services</button> */}
+                                <Link to="/AboutUs" className="nav-links">About Us</Link> 
+                            </span>
                             <span>
                                 <Link to="/AboutUs" className="nav-links">About Us</Link>
                             </span>
