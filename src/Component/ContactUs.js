@@ -9,7 +9,7 @@ import { useState } from "react";
 function ContactUsComponent(){
 
     const [senderEmail, setSenderEmail] = useState("");
-    const [receiverEmail, setReceiverEmail] = useState("");
+    //const [receiverEmail, setReceiverEmail] = useState("");
     const [emailBody, setEmailBody] = useState("");
 
     async function submit(event) {
@@ -17,7 +17,6 @@ function ContactUsComponent(){
         try {
           await axios.post("http://localhost:8080/api/contactUs", {
             senderEmail: senderEmail,
-            receiverEmail: receiverEmail,
             emailBody: emailBody,
           }).then((res) =>
           {
@@ -54,9 +53,7 @@ function ContactUsComponent(){
                         value={senderEmail} onChange={(event) => 
                             setSenderEmail(event.target.value)}/>
 
-                        <input type="text" id="receiverEmail" placeholder="  BoardingHub@gmail.com" 
-                        value={receiverEmail} onChange={(event) => 
-                            setReceiverEmail(event.target.value)}/>
+                        <textarea id='receiverEmail'readonly placeholder="  BoardingHub@gmail.com"></textarea>
 
                         <input type="text" id="emailBody" placeholder="  Type Your message" 
                         value={emailBody} onChange={(event) => 

@@ -13,13 +13,13 @@ export const MenuItems = [
     },
     {
         title : "About",
-        url : "/About",
+        url : "/AboutUs",
         cName : "nav-Links"
 
     },
     {
         title : "Login",
-        url : "/login",
+        url : "/Login",
         cName : "nav-Links-mobile"
 
     },

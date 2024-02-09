@@ -1,7 +1,6 @@
 import { Component } from "react";
 import "./NavbarStyles.css";
 import { MenuItems } from "./MenuItems";
-import { Link } from "react-router-dom";
 
 class NavBar extends Component {
   state = { clicked: false };
@@ -33,3 +32,69 @@ class NavBar extends Component {
 }
 
 export default NavBar;
+
+
+
+// import React,{useState} from 'react';
+
+// import { Link } from 'react-router-dom';
+// import "./NavbarStyles.css"; // Import your Navbar styles if you have any
+
+
+
+// const NavBar = () => {
+
+//   const [menuVisible, setMenuVisible] = useState(false);
+
+//   const toggleMenu = () => {
+//     setMenuVisible(!menuVisible);
+//   };
+ 
+//   return (
+//     <nav className="navbar">
+
+//       <div className="navbar-container">
+//         <Link to="/" className="navbar-logo">
+//         <h1 className="nav-logo"><b>BoardingHub</b></h1>
+//         </Link>
+
+//         <ul className="nav-menu">
+
+//           <li className="nav-item">
+//             <Link to="/" className="nav-links">
+//               Services 
+//             </Link>
+
+//           </li>
+//           <li className="nav-item">
+//             <Link to="/Services" className="nav-links">
+//               Services
+//             </Link>
+//           </li>
+
+//           <li className="nav-item">
+//             <Link to="/ContactUs" className="nav-links">
+//               ContactUs
+//             </Link>
+//           </li>
+
+//           <li className='nav-item'>
+//             <Link to="/AboutUs"  className="nav-links">
+//               AboutUs 
+//               </Link>
+//           </li>
+
+//           <li className="nav-item">
+//             <Link to="/Login" className="nav-links">
+//               Login
+//             </Link>
+//           </li>
+ 
+//         </ul>
+//         </div>
+      
+//       </nav>
+//     );
+//   };
+  
+//   export default NavBar;
