@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import driver from "../Assets/Transpottion/drver.avif";
+import driver from "../Assets/Transpottion/driver.avif";
 import "../CSS/TranHireRegistration.css";
 import NavBar from "../Component/NavBar";
 
