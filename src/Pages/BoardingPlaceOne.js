@@ -10,8 +10,8 @@ import React, { useState } from "react";
 function BoardingPlaceOne() {
 
     const [selectedLocation, setSelectedLocation] = useState({
-        lat: 7.290572,
-        lng: 80.633728,
+        lat: 6.927079,
+        lng: 79.861244,
       });
 
     return (
