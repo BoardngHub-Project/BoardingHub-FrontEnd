@@ -82,7 +82,6 @@ function ServiceProviderAccount() {
             <input
               type="email"
               class="form-control"
-              id="exampleFormControlInput1"
               placeholder="name@example.com"
               id="email"
               value={email}
@@ -99,7 +98,7 @@ function ServiceProviderAccount() {
                 <input
                   class="form-check-input"
                   type="checkbox"
-                  value=""
+                  // value=""
                   id="boardingProvider"
                   value = {boardingProvider}
                   onChange = {(event) => {
@@ -114,7 +113,7 @@ function ServiceProviderAccount() {
                 <input
                   class="form-check-input"
                   type="checkbox"
-                  value=""
+                  // value=""
                   id="mealprovider"
                   value = {mealProvider}
                   onChange = {(event) => {
@@ -131,7 +130,7 @@ function ServiceProviderAccount() {
                 <input
                   class="form-check-input"
                   type="checkbox"
-                  value=""
+                  // value=""
                   id="transportationProvider"
                   value = {transportationProvider}
                   onChange = {(event) => {
@@ -146,7 +145,7 @@ function ServiceProviderAccount() {
                 <input
                   class="form-check-input"
                   type="checkbox"
-                  value=""
+                  // value=""
                   id="jobProvider"
                   value = {jobProvider}
                   onChange = {(event) => {
