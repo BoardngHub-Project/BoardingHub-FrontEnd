@@ -13,6 +13,7 @@ import  BoardingPlaceGigForm from "./Pages/BoardingPlaceGigForm";
 import  EditProfile from "./Pages/EditProfile";
 import UserDashboard from "./Pages/UserDashboard";
 import BoardingPlaceOne from "./Pages/BoardingPlaceOne";
+import BoardingPlaces1 from "./Pages/BoardingPlaces1";
 
 function App() {
   return (
@@ -32,9 +33,10 @@ function App() {
           <Route path='/BoardingPlaceGigForm' element={<BoardingPlaceGigForm/>}/>
           <Route path='/EditProfile' element={<EditProfile/>}/>
           <Route path='/BoardingPlaceOne' element={<BoardingPlaceOne/>}/>
-          
+          <Route path='/BoardingPlaces1' element={<BoardingPlaces1/>}/>
           
         </Routes>
+        
         <Footer/>
       </Router>
     </div>
