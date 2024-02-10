@@ -1,0 +1,57 @@
+.title{
+    position: relative;
+    text-align: center;
+    top: 150px;
+    text-shadow: 100px;
+}
+
+.DashboardSelections{
+    position: relative;
+    top: 250px;
+}
+
+#boardingPlace{
+    position: absolute;
+    left: 300px;
+    width: 400px;
+    height: 400px;
+    font-size:x-large;
+    background-color: #F9FBA5;
+    border-radius: 30px;
+    color: #000;
+}
+
+#mealProviders{
+    position: absolute;
+    left: 850px;
+    width: 400px;
+    height: 400px;
+    font-size:x-large;
+    background-color: #FAC3FF;
+    border-radius: 30px;
+    color: #000;
+}
+
+#transportProviders{
+    position: absolute;
+    top: 500px;
+    left: 850px;
+    width: 400px;
+    height: 400px;
+    font-size:x-large;
+    background-color: #C3FFDF;
+    border-radius: 30px;
+    color: #000;
+}
+
+#partTimeJobs{
+    position: absolute;
+    left: 300px;
+    width: 400px;
+    height: 400px;
+    top: 500px;
+    font-size:x-large;
+    background-color: #f6bb63;
+    border-radius: 30px;
+    color: #000;
+}

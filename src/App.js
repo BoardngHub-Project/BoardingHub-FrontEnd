@@ -11,6 +11,8 @@ import  Dashboard from "./Pages/Dashboard";
 import  ServiceProviderProfile from "./Pages/ServiceProviderProfile";
 import  BoardingPlaceGigForm from "./Pages/BoardingPlaceGigForm";
 import  EditProfile from "./Pages/EditProfile";
+import UserDashboard from "./Pages/UserDashboard";
+import BoardingPlaceOne from "./Pages/BoardingPlaceOne";
 
 function App() {
   return (
@@ -25,13 +27,14 @@ function App() {
           <Route path="/ContactUs" element={<ContactUs/>} />
           <Route path="/Login" element={<Login/>} />
           <Route path='/Dashboard' element={<Dashboard/>}/>
+          <Route path='/UserDashboard' element={<UserDashboard/>}/>
           <Route path='//ServiceProviderProfile' element={<ServiceProviderProfile/>}/>
           <Route path='/BoardingPlaceGigForm' element={<BoardingPlaceGigForm/>}/>
           <Route path='/EditProfile' element={<EditProfile/>}/>
+          <Route path='/BoardingPlaceOne' element={<BoardingPlaceOne/>}/>
           
           
         </Routes>
-
         <Footer/>
       </Router>
     </div>
