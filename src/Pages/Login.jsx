@@ -4,8 +4,6 @@ import "../CSS/Login.css";
 import axios from "axios";
 
 
-
-
 export const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -40,8 +38,19 @@ export const Login = () => {
     }
 
   }
+
+    async function signup(event) {
+      event.preventDefault();
+      try {
+        nav('/RegisterChoice')
+      } catch (err) {
+        alert(err);
+      }
+
+    }
+
   return (
-    <div className="container">
+    <div className="containerAll">
       <div className="auth-form-container">
         <div className="LeftHalf">
           <h1 className="loginHeader">
@@ -50,17 +59,17 @@ export const Login = () => {
           <hr className="hRule"></hr>
 
           <form className="LogIn-Form">
-            <div className="emailInput">
+          <div>
               <input
-                type="email"
-                className="emailIn"
+                type="text"
+                className="passwordIn"
                 placeholder="email"
                 id="email"
                 name="email"
                 value={email}
-                onChange={(event) => 
-                  setEmail(event.target.value)
-                }
+                onChange={(event) => {
+                  setEmail(event.target.value);
+                }}
               />
             </div>
             <br></br>
@@ -95,7 +104,7 @@ export const Login = () => {
           <p className="SignUpText2">
             Sign up and get massive<br></br> opportunities
           </p>
-          <button className="SignUpButton" onClick={submit}>
+          <button className="SignUpButton" onClick={signup}>
             <b>Sign Up</b>
           </button>
         </div>

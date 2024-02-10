@@ -23,3 +23,14 @@
     position: relative;
     top: 200px;
 }
+
+.search-location-input{
+    position: relative;
+    top: -150px;
+    width: 80%;
+}
+
+.map{
+    position: relative;
+    top: -600px;
+}

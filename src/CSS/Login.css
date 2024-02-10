@@ -1,6 +1,6 @@
-.container{
+.containerAll{
     position: relative;
-    top: 70px;
+    top: 60px;
 }
 
 .loginHeader {
@@ -83,7 +83,8 @@ label{
 }
 
 
-.emailIn {
+
+.emailIn{
     background-color: #dbdada;
     border-radius: 5px;
     width: 500px;
@@ -91,7 +92,6 @@ label{
     border: 0;
     height: 30px;
     
-
 }
 
 .passwordIn {

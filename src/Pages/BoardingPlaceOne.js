@@ -1,17 +1,24 @@
-import React from "react";
+
 import Footer from '../Component/Footer';
-import NavBar from '../Component/NavBar';
+import NavigationBarLoggedIn from '../Component/NavigationBarLoggedIn';
 import '../CSS/BoardingHouseOne.css';
 import MapComponent from "../Component/MapComponent";
-import SearchBar from "../Component/SearchBar";
+import SearchLocationInput from "../Component/SearchBar";
+import React, { useState } from "react";
 
 
 function BoardingPlaceOne() {
+
+    const [selectedLocation, setSelectedLocation] = useState({
+        lat: 7.290572,
+        lng: 80.633728,
+      });
+
     return (
         <div>
-            <NavBar />
+            <NavigationBarLoggedIn />
             <div className="boardingHouseOneImage">
-                <div className="searchBar"><SearchBar/></div>
+                {/* <div className="searchBar"><SearchBar/></div> */}
                 <img src={require('../Pages/Assets/boardingHouse1.jpg')}
                 height={500}
                 width='100%'
@@ -19,9 +26,13 @@ function BoardingPlaceOne() {
                 
                 />
             </div>
-            <div className="MapComponent">
-                <MapComponent/>
+            <div className="searchBar"style={{ height: "100vh", width: "100%" }}>
+                <SearchLocationInput setSelectedLocation={setSelectedLocation} />
             </div>
+            <div className='map'>
+                <MapComponent selectedLocation={selectedLocation} />
+            </div>
+
             <Footer />
         </div>
 
