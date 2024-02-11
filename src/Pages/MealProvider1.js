@@ -1,13 +1,13 @@
 import { ButtonList } from "../Helpers/ButtonList";
 import ButtonItem from '../Component/ButtonItem';
 import Footer from "../Component/Footer";
-import NavBar from "../Component/NavBar";
+import NavigationBar from "../Component/NavigationBar";
 import '../CSS/Home.css';
 
 export default function MealProvider1() {
     return (
       <div>
-        <NavBar/>
+        <NavigationBar/>
         <div>
           <div className='ButtonList'>
           {ButtonList.map((buttonItem, key ) => {
