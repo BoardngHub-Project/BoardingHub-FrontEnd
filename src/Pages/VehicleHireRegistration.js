@@ -26,7 +26,7 @@ const VehicleHireRegistration = () => {
 
   return (
     <div class="flex-container">
-      <NavBar/>
+      {/* <NavBar/> */}
       <div class="container">
         <img src={Driver} alt="..." />
       </div>

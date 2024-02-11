@@ -1,0 +1,30 @@
+body {
+    background-image: url("../Assets/Transpottion/vehicle.jpg");
+    background-repeat: no-repeat;
+    background-color: #ccc;
+    background-size : cover;
+  } 
+
+.container{
+    padding-top: 30px;
+    padding-left: 30px;
+    
+}
+
+.sub-container1{
+    
+    display: flex;
+    position: justify ;
+    flex-direction: column;
+    width: 45%;
+    border-color: black;
+    margin-left: 300px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    padding-right: 30px;
+    border: solid;
+    background-color:aliceblue;
+    border-radius: 10px;
+
+}

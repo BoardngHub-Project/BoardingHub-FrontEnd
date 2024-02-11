@@ -4,7 +4,12 @@ body{
 
 .container{
   display: flex;
-  top: 100PX;
+  /* margin-top: 80px; */
+  position: fixed;
+  height: 100vh;
+  overflow-y: auto;
+  margin-left: 100px;
+
   
 }
 
