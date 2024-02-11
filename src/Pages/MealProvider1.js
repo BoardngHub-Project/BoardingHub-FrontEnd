@@ -3,12 +3,19 @@ import ButtonItem from '../Component/ButtonItem';
 import Footer from "../Component/Footer";
 import NavBar from "../Component/NavBar";
 import '../CSS/Home.css';
+import '../CSS/MealProvider1.css';
 
 export default function MealProvider1() {
     return (
       <div>
         <NavBar/>
         <div>
+          <div className="para">
+            <p>
+              <h2 className="first">Choose Your Flavorful Adventure: Breakfast, Lunch, or Dinner... </h2>
+              <h3>Your Tasty Exploration Starts Here!</h3>
+            </p>
+          </div>
           <div className='ButtonList'>
           {ButtonList.map((buttonItem, key ) => {
               return <ButtonItem key={key} name={buttonItem.name} image={buttonItem.image}/>
