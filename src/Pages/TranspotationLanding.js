@@ -2,7 +2,7 @@ import React from "react";
 import rent from "../Assets/Transpottion/rent car.webp";
 import hire from "../Assets/Transpottion/taxi.jpeg";
 import "../CSS/transpotation.css";
-import NavBar from "../Component/NavBar";
+import NavigationBar from "../Component/NavigationBar";
 import Footer from "../Component/Footer";
 import { useNavigate } from "react-router-dom";
 
@@ -10,11 +10,12 @@ function TranspotationLanding() {
   // const navigate = useNavigate();
   return (
     <div>
-      <NavBar/>
-    <div class="app-container">
-    <div class ="col">
-          {/* onClick={()=> navigate('/transpotationhire')} */}
-          <button class="left-button" >
+
+      <NavigationBar/>
+    <div className="app-container">
+      <button className="left-button">
+
+
         <img src={rent} alt="Left Button" class="image" />
       </button>
     </div>

@@ -21,9 +21,9 @@ function UserDashboard() {
             </div>
             <div className='DashboardSelections'>
                 <button id='boardingPlace' onClick={() => handleClick('/BoardingPlaceOne')}><b>Boarding Place</b></button>
-                <button id='mealProviders' onClick={() => handleClick('/BoardingPlaceOne')}><b>Meal Providers</b></button>
-                <button id='transportProviders' onClick={() => handleClick('/BoardingPlaceOne')}><b>Transport Providers</b></button>
-                <button id='partTimeJobs' onClick={() => handleClick('/BoardingPlaceOne')}><b>Part-Time Jobs</b></button>
+                <button id='mealProviders' onClick={() => handleClick('/MealProvider1')}><b>Meal Providers</b></button>
+                <button id='transportProviders' onClick={() => handleClick('/TranspotationLanding')}><b>Transport Providers</b></button>
+                <button id='partTimeJobs' onClick={() => handleClick('/GetJob')}><b>Part-Time Jobs</b></button>
             
             </div>
         

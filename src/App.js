@@ -18,6 +18,8 @@ import RegisterChoice from "./Pages/RegisterChoice";
 import CreateUser from "./Pages/CreateUser";
 import ServiceProviderAccount from "./Pages/ServiceProviderAccount";
 import SelectService from "./Pages/SelectService";
+import GetJob from "./Pages/GetJob";
+import TranspotationLanding from "./Pages/TranspotationLanding"
 
 function App() {
   return (
@@ -42,6 +44,8 @@ function App() {
           <Route path='/CreateUser' element={<CreateUser/>}/>
           <Route path='/ServiceProviderAccount' element={<ServiceProviderAccount/>}/>
           <Route path='/SelectService' element={<SelectService/>}/>
+          <Route path='/GetJob' element={<GetJob/>}/>
+          <Route path='/TranspotationLanding' element={<TranspotationLanding/>}/>
           
         </Routes>
         
