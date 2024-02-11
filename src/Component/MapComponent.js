@@ -72,29 +72,29 @@ const MapComponent = ({ selectedLocation }) => {
         <MarkerF
           position={boardingPlace1}
           icon={"http://maps.google.com/mapfiles/ms/icons/green-dot.png"}
-          onClick={() => nav('/UserDashboard')}
+          onClick={() => nav('/BoardingPlaces1')}
         />
 
         <MarkerF
           position={boardingPlace2}
           icon={"http://maps.google.com/mapfiles/ms/icons/green-dot.png"}
-          onClick={() => nav('/UserDashboard')}
+          onClick={() => nav('/BoardingPlaces1')}
         />
 
         <MarkerF
           position={boardingPlace3}
           icon={"http://maps.google.com/mapfiles/ms/icons/green-dot.png"}
-          onClick={() => nav('/UserDashboard')}
+          onClick={() => nav('/BoardingPlaces1')}
         />
         <MarkerF
           position={boardingPlace4}
           icon={"http://maps.google.com/mapfiles/ms/icons/green-dot.png"}
-          onClick={() => nav('/UserDashboard')}
+          onClick={() => nav('/BoardingPlaces1')}
         />
         <MarkerF
           position={boardingPlace5}
           icon={"http://maps.google.com/mapfiles/ms/icons/green-dot.png"}
-          onClick={() => nav('/UserDashboard')}
+          onClick={() => nav('/BoardingPlaces1')}
         />
 
       </GoogleMap>

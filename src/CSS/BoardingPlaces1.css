@@ -1,0 +1,97 @@
+.Photo1{
+    position: absolute;
+    left: 110px;
+    border: 10px;
+    border-width: 10px;
+    border-color: black;
+    top: 1600px;
+    left: 140px;
+
+}
+
+.Photo2{
+    position: absolute;
+    left: 110px;
+    border: 10px;
+    border-width: 10px;
+    border-color: black;
+    top: 2010px;
+    left: 140px;
+}
+
+.Photo3{
+    position: absolute;
+    left: 10px;
+    border: 10px;
+    border-width: 10px;
+    border-color: black;
+    top: 2420px;
+    left: 140px;
+}
+
+.submitBtnBack{
+    background-color: rgb(37, 176, 37);
+    position: absolute;
+    bottom: 30px;
+    color: white;
+    left: 1110px;
+    border-radius: 15px;
+    top: -70px;
+    height: 50px;
+}
+
+.Accomodation{
+    position: absolute;
+    background-color: white;
+    top: 30px;
+    left: 730px;
+    width: 30%;
+    height: 40px;
+
+}
+
+.Price{
+    position: absolute;
+    background-color: white;
+    top: 120px;
+    left: 30px;
+    width: 25%;
+    height: 40px;
+}
+
+.ContactNo{
+    position: absolute;
+    background-color: white;
+    top: 120px;
+    left: 730px;
+    width: 25%;
+    height: 40px;
+}
+
+.Availability{
+    position: absolute;
+    background-color: white;
+    top: 30px;
+    left: 30px;
+    width: 20%;
+    height: 40px; 
+}
+
+.Address{
+    position: absolute;
+    background-color: white;
+    top: 210px;
+    left: 30px;
+    width: 60%;
+    height: 100px;
+}
+
+.Description{
+    position: absolute;
+    background-color: white;
+    width: 95%;
+    height: 400px;
+    top: 350px;
+    left: 30px;
+    
+}

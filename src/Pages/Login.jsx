@@ -22,12 +22,12 @@ export const Login = () => {
         {
           alert("Account not found");
         }
-        else if(res.data === "Service Provider Logged in Successfully!...")
-        {
-          alert("Logged in Successfully!...");
-          nav('/Dashboard');
-        }
-        else if(res.data === "User Logged in Successfully!...")
+        // else if(res.data === "Service Provider Logged in Successfully!...")
+        // {
+        //   alert("Logged in Successfully!...");
+        //   nav('/Dashboard');
+        // }
+        else if(res.data === "Logged in Successfully!...")
         {
           alert("Logged in Successfully!...");
           nav('/UserDashboard');

@@ -59,7 +59,7 @@ function ContactUsComponent(){
                         value={emailBody} onChange={(event) => 
                             setEmailBody(event.target.value)}/>
                             
-                        <button className="submitBtn" type="Submit" onClick={submit}>
+                        <button className="contactSubmitBtn" type="Submit" onClick={submit}>
                             <b>Submit</b>
                         </button>
                     </div>
