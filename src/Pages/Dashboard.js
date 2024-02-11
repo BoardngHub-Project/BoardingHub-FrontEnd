@@ -21,7 +21,7 @@ function Dashboard() {
             </div>
             <div className='DashboardSelections'>
                 <button id='profile' onClick={() => handleClick('/ServiceProviderProfile')}><b>Profile</b></button>
-                <button id='addService' onClick={() => handleClick('/BoardingPlaceGigForm')}><b>Add Service</b></button>
+                <button id='addService' onClick={() => handleClick('/SelectService')}><b>Add Service</b></button>
                 <button id='editService' onClick={() => handleClick('/EditProfile')}><b>Edit Service</b></button>
             
             </div>

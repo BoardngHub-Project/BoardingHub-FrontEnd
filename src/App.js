@@ -14,6 +14,10 @@ import  EditProfile from "./Pages/EditProfile";
 import UserDashboard from "./Pages/UserDashboard";
 import BoardingPlaceOne from "./Pages/BoardingPlaceOne";
 import BoardingPlaces1 from "./Pages/BoardingPlaces1";
+import RegisterChoice from "./Pages/RegisterChoice";
+import CreateUser from "./Pages/CreateUser";
+import ServiceProviderAccount from "./Pages/ServiceProviderAccount";
+import SelectService from "./Pages/SelectService";
 
 function App() {
   return (
@@ -34,6 +38,10 @@ function App() {
           <Route path='/EditProfile' element={<EditProfile/>}/>
           <Route path='/BoardingPlaceOne' element={<BoardingPlaceOne/>}/>
           <Route path='/BoardingPlaces1' element={<BoardingPlaces1/>}/>
+          <Route path='/RegisterChoice' element={<RegisterChoice/>}/>
+          <Route path='/CreateUser' element={<CreateUser/>}/>
+          <Route path='/ServiceProviderAccount' element={<ServiceProviderAccount/>}/>
+          <Route path='/SelectService' element={<SelectService/>}/>
           
         </Routes>
         
