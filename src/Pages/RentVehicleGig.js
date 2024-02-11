@@ -1,27 +1,46 @@
 import React, { useEffect, useState } from "react";
-import SliderComponent from "../Component/SliderComponent";
 import NavBar from "../Component/NavBar";
 import Footer from "../Component/Footer";
 import '../CSS/ServiceProviderProfile.css';
+import axios from "axios";
 
 
 const RentVehicleGig = () => {
-  const [products, setProducts] = useState([]);
+  const [vehicles, setVehicles] = useState([]);
+  const [user,setUser] = useState();
 
-  useEffect(() => {
-    fetch("") //api request path in backend
-      .then((response) => response.json())
-      .then((data) => setProducts(data))
-      .catch((error) => console.error("Error fetching products:", error));
-  }, []);
+  // useEffect(() => {
+  //   axios
+  //     .get("",{
+  //     headers: {
+  //       'Access-Control-Allow-Origin': '*',
+  //       'Content-Type': 'application/json',
+  //     },
+  //   })
+  //     .then((response) => {
+  //       setVehicles(response.data);
+  //     })
+  //     .catch((error) => {
+  //       console.error("Error: ", error);
+  //     });
+  // }, []);
 
+    useEffect(() => {
+      axios.get("http://localhost:8080/api/service-provider/{serviceProviderType}")
+    })
+      .then((response) => {
+        setUser(response.data);
+      })
+      .catch((error) => {
+        console.error("Error :",error);
+      });
   return (
     <div>
       <NavBar />
       <div className="profile">
         <div>
           <h3>
-            <u>Service Provider Profile</u>
+            <u>Transportation Provider Profile Page</u>
           </h3>
         </div>
         <div className="editInfoBtn">
@@ -42,17 +61,17 @@ const RentVehicleGig = () => {
           <div className="variableBox">
             <div>
               <b>First Name : </b>
-              <input id="firstName" />
+                {user.firstname}
             </div>
             <br />
             <div>
               <b>Last Name : </b>
-              <input id="lastName" />
+                {user.lastname}
             </div>
             <br />
             <div>
               <b>Email : </b>
-              <input id="email" />
+                {user.email}
             </div>
             <br />
             <div>
@@ -63,17 +82,38 @@ const RentVehicleGig = () => {
         </div>
       </div>
       <div>
-        <SliderComponent products={products} />
+      {/* {vehicles.map((vehicle) => (
+        <div className="card" key={vehicle.vehicleId}>
+          <img
+            className="card-img-top"
+            src={vehicle.image}
+            alt={vehicle.vehicleType}
+          />
+
+          <div className="card-body">
+            <h5 className="card-title">{vehicle.vehicleType}</h5>
+
+            <p className="card-text">{vehicle.description}</p>
+
+            <p className="card-text">
+              <strong>Price per day:</strong> ${vehicle.pricePerDay}
+            </p>
+
+            <p className="card-text">
+              <strong>Availability:</strong> {vehicle.availability}
+            </p>
+
+            <p className="card-text">
+              <strong>Vehicle make:</strong> {vehicle.vehicleMake}
+            </p>
+          </div>
+        </div>
+      ))} */}
       </div>
       <Footer />
     </div>
   );
 };
-//   return (
-//     <div>
-//       <h2>Product List</h2>
-//       <SliderComponent products={products} />
-//     </div>
-//   );
+
 
 export default RentVehicleGig;
