@@ -1,4 +1,6 @@
 
+
+
 .frame-chaild,
 .frame-item{
     position: absolute;
@@ -34,9 +36,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: background-color 0.3s ease; 
     
   }
-  
+  .left-side button:hover {
+    background-color: #3cb336; 
+}
+
   
   .left-side button {
     right: 50%;

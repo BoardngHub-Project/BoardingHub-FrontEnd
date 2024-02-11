@@ -1,3 +1,8 @@
+body{
+  position: relative;
+  margin-top: 50px;
+  background-color: rgb(255, 255, 255);
+}
 
 .frame-chaild,
 .frame-item{
@@ -53,11 +58,15 @@
     box-sizing:unset;
     width: 350px;
     height: 50px;
+    transition: background-color 0.3s ease; 
     
     
     
   }
-  
+  .left-side button:hover {
+    background-color: #3cb336; 
+}
+
   .right-side {
     flex: 1;
     display: flex;

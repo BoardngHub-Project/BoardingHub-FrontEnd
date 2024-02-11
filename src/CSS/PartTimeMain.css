@@ -1,6 +1,5 @@
-
 .frame-chaild,
-.frame-item{
+.frame-item {
     position: absolute;
     left: 0;
     border-radius: var(--br-x1);
@@ -8,66 +7,60 @@
     height: auto;
 }
 
-.title{
+.title {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 200%;
-    color:black;
+    color: black;
     justify-content: center;
     right: auto;
-    
-    margin:60px;
+    margin: 60px;
 }
 
 .flex-container {
     display: flex;
     top: 30px;
     background-image: url("../Assets/PartTimeJob/b1.jpg");
-    background-size: cover; 
-    background-repeat: no-repeat; 
+    background-size: cover;
+    background-repeat: no-repeat;
     background-position: center center;
-    
 }
-  
 
-  .left-side {
-    flex: 1; 
+.left-side {
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
-  }
-  
-  
-  .left-side button {
+}
+
+.left-side button {
     right: 50%;
-    margin:40px;
+    margin: 40px;
     color: white;
     font-size: 200%;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: #3670B4;
-    box-sizing:unset;
+    box-sizing: unset;
     width: 350px;
     height: 50px;
-    
-    
-    
-  }
-  
-  
-  .right-side {
-    flex: 1; 
+    transition: background-color 0.3s ease; 
+}
+
+.left-side button:hover {
+    background-color: #3cb336; 
+}
+
+.right-side {
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 8%;
-  }
-  
- 
-  .right-side img {
+}
+
+.right-side img {
     max-width: 100%;
     max-height: 100%;
     height: auto;
     width: auto;
-  }
-  
+}
